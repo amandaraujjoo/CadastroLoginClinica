@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Login</title>
+    <!-- Link para o CSS do Bootstrap -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+
+
+        /* Estilo para o corpo da página */
+        body {
+            height: 90vh; 
+            margin: 0;
+            background: linear-gradient(to left, rgb(207, 213, 247), rgba(255, 255, 255, 0)), url('https://cdn.folhape.com.br/upload/dn_arquivo/2020/01/medico1.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+
+        /* Estilo para o contêiner do formulário */
+        .form-container {
+            border-radius: 15px;
+            padding: 40px;
+            background-color: rgba(182, 204, 214, 0.9); 
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 500px; /* Largura máxima do formulário */
+            margin: 90px 0 90px auto; /* Margem superior e inferior de 90px, alinhado à direita */
+            margin-right: 10%; /* Ajuste conforme necessário para afastar da borda direita */
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Barra de Navegação -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="home.html">
+            <img src="logo.png" width="80" height="60" alt="Logo da Clínica">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" 
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Alterna navegação">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="home.html">Home <span class="sr-only">(Página atual)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="servicos.html">Serviços</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contato.html">Contato</a>
+                </li>
+                <li class="nav-item">
+                    <a class="btn btn-outline-primary rounded-pill px-4 py-2" href="login.html">
+                        Agendar Consulta
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Contêiner do Formulário -->
+    <div class="form-container">
+        <form>
+            <h2>Faça login para agendar sua consulta on-line!</h2>
+            <div class="form-group">
+                <label for="cpfInput">Insira o seu CPF</label>
+                <input type="text" class="form-control" id="cpfInput" placeholder="CPF">
+            </div>
+            <div class="form-group">
+                <label for="passwordInput">Senha</label>
+                <input type="password" class="form-control" id="passwordInput" placeholder="Senha">
+            </div>
+            <div class="form-group form-check">
+                <input type="checkbox" class="form-check-input" id="showPasswordCheck">
+                <label class="form-check-label" for="showPasswordCheck">Exibir senha</label>
+            </div>
+            <button type="submit" class="btn btn-primary btn-lg btn-block">Entrar</button>
+            <div class="mt-4">
+                <span>Ainda não tem uma conta?</span>
+                <a href="cadastro.html" class="link-primary">Cadastre-se</a>
+                
+        </form>
+    </div>
+
+    <!-- Scripts do Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
